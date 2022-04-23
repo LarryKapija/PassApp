@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
+    <PackageReference Include="Prism.Forms" Version="8.1.97" />
+    <PackageReference Include="Fody" Version="6.6.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+    <PackageReference Include="Prism.Unity.Forms" Version="8.1.97" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.1.0" />
+    <PackageReference Include="MonkeyCache.FileStore" Version="1.6.3" />
+    <PackageReference Include="MonkeyCache" Version="1.6.3" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+    <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Prism.Forms" />
+    <None Remove="Fody" />
+    <None Remove="PropertyChanged.Fody" />
+    <None Remove="Prism.Unity.Forms" />
+    <None Remove="Pages\" />
+    <None Remove="Utils\" />
+    <None Remove="Models\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Com.Airbnb.Xamarin.Forms.Lottie" />
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Services\Implementation\" />
+    <None Remove="MonkeyCache.FileStore" />
+    <None Remove="MonkeyCache" />
+    <None Remove="FirebaseDatabase.net" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Animations\" />
+    <None Remove="Resources\Animations\EmptyList.json" />
+    <None Remove="Views\" />
+    <None Remove="Xamarin.Forms.PancakeView" />
+    <None Remove="Refit" />
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Implementation\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Animations\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Animations\EmptyList.json" />
+  </ItemGroup>
+</Project>

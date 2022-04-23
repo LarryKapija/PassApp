@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PassApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--App Colors-->
+
+            <Color x:Key="PrimaryColor">#A9CC3D</Color>
+            <Color x:Key="SecondaryColor">#EEF5D8</Color>
+
+            <Color x:Key="LightBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="DarkBackgroundColor">#121212</Color>
+
+            <Color x:Key="DarkCardColor">#1F1F1F</Color>
+            <Color x:Key="LightCardColor">#FFFFFF</Color>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>
